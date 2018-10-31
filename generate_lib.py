@@ -9,7 +9,7 @@ def pick_two_random_primes():
     """
     Pick 2 random primes and then return them
     Currently, the random primes are of size
-    ~10,000,000 
+    ~10,000,000
     """
     pass
     # Temp values for p and q
@@ -17,6 +17,9 @@ def pick_two_random_primes():
     q = 10_000_079
 
     # TODO: pick 2 random primes and replace these values of p, q
+
+    # TODO: look up random.choice (https://docs.python.org/3/library/random.html)
+
 
     return (p,q)
 
@@ -48,7 +51,7 @@ def calculate_phi(p,q):
 
 def calculate_d(e, phi):
     """
-    given the e and phi use the RSA formula to calculate 
+    given the e and phi use the RSA formula to calculate
     d.
 
     formula : e * d = 1 mod phi
@@ -62,7 +65,7 @@ def calculate_d(e, phi):
 
 def generate_public_key(enc_exponent, modulus):
     """
-    Use the encryption exponent and the modulus to 
+    Use the encryption exponent and the modulus to
     create a 2-tuple that contains those two.
     """
 
