@@ -1,0 +1,40 @@
+## TEST KEYS TO USE
+
+Public Key:
+(65537, 100746831503809)
+
+Private Key:
+(47502589681765,100746831503809)
+
+
+## TEST CASE TEXT:
+
+------CASE 1------
+PLAINTEXT:
+Morph
+
+CIPHERTEXT:
+NMB8EXbU
+
+------CASE 2------
+PLAINTEXT:
+Morpheus
+
+CIPHERTEXT:
+NMB8EXbU
+VquKaN0C
+
+
+------CASE 3------
+PLAINTEXT: 
+Hello this is a test
+
+CIPHERTEXT:
+ViKvTvBn
+IS7Cp8kV
+QVK6xAVB
+QJfEaCiG
+
+
+
+
