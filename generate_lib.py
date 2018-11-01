@@ -112,7 +112,6 @@ def save_private_key_to_file(private_key, filename):
 
     # TODO save base64 encoded private key to file
 
-
     pass
 
 def extended_euclidean_algorithm(e, phi):
