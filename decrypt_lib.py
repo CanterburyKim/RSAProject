@@ -59,7 +59,7 @@ def convert_number_to_message_chunk(number):
     """
     takes a number and then converts it into a string
     """
-    # TODO: Joe
+    # TODO: Chase
     message_chunk = 'this is'
 
     return message_chunk
