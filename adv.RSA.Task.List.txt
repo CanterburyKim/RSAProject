@@ -1,0 +1,73 @@
+ADV RSA PROJECT TASK LIST
+
+
+GENERATE
+
+GUI Commands?
+
+Leo:
+* Pick 2 random primes
+* Generate Public and Private Keys (ext Euclidean Algo)
+* Save keys
+
+David
+
+* Base64 encode Public and Private Keys
+* Saving file
+
+Nikita
+
+* UNderstand format
+* Chunking
+* Build Prime Number list
+* Read from file
+
+Alex
+* Save public and Private keys to file
+* Image Magick
+* GUI
+
+##### DECRYPTION
+
+Decryption GUI ?
+Decryption GUI commands
+
+Tyler
+* get decryption keys
+* read cipher chunks (+nikita)
+* Save and return the text
+* Base64 decode
+
+Joe
+* Convert each number into text
+* Put the text into 1 string
+* Image Magick
+
+
+Chase
+* Convert each chunk into a number
+* Base 64 encode each chunk (+xander)
+* RSA decrypt each number
+* Decryption button commands
+
+
+
+##### ENCRYPT
+
+GUIs?
+GUI Commmands? button
+
+Xander
+* save encrypted string
+* Base64 encode (general)
+
+Kevin
+* Encrypt a number
+* Encrypt mutliple numbers
+* Image Magick
+* RSA letters to #
+* Read key (+nikita)
+
+Daniel
+* Encrypt a string
+* Encrypt a chunk
