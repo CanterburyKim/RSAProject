@@ -30,8 +30,8 @@ def rsa_encrypt_number(number, public_key):
     using the public key
     """
     # TODO: Daniel
-
     encrypted_number = 22
+
     return encrypted_number
 
 def rsa_encrypt_numbers(numbers, public_key):

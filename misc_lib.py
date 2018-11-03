@@ -1,6 +1,6 @@
 """
 Miscellaneous needed library files
-
+Test comment
 """
 
 import os
@@ -14,6 +14,8 @@ def base64_decode_exponent(exponent):
 def base64_decode_modulus(modulus):
     pass
 
-def how_many_bytes_is_n(n):
+def base64_decode_number(number):
     pass
 
+def how_many_bytes_is_n(n):
+    pass
