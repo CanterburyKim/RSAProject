@@ -14,36 +14,43 @@ class TestDecryptMethods(unittest.TestCase):
         # TODO: Tyler
         pass
 
-    def test_get_decryption_key(filename):
+    def test_get_decryption_key():
         # TODO: Tyler
+        filename=''
 
         pass
 
-    def test_rsa_decrypt_number(number, private_key):
+    def test_rsa_decrypt_number():
         # TODO: Chase
+        number = 6
+        private_key = (5,5)
         pass
 
-    def test_rsa_decrypt_numbers(numbers, private_key):
+    def test_rsa_decrypt_numbers():
         # TODO: Tyler
+        numbers = []
+        private_key = (3,7)
         pass
 
-    def test_base64_decode_numbers(message_chunks):
+    def test_base64_decode_numbers(self):
         # TODO: Tyler
+        message_chunks=[]
         pass
 
-    def test_convert_number_to_message_chunk(number):
+    def test_convert_number_to_message_chunk(self):
         # TODO: Chase
+        number = 6
         pass
 
-    def test_convert_numbers_to_strings(numbers):
+    def test_convert_numbers_to_strings(self):
+        numbers = []
         # TODO: Joe
         pass
 
-    def test_assemble_message_from_chunks(message_chunks):
+    def test_assemble_message_from_chunks(self):
         # TODO: Joe
+        message_chunks = []
         pass
-
-    # TODO put the actual test cases that you want to run here
 
 
 if __name__ == '__main__':
