@@ -1,40 +1,41 @@
 """
-Unit test file for Decryption
+   Unit test file for Decryption
 
 """
 import unittest
 import decrypt_lib
+
 
 class TestDecryptMethods(unittest.TestCase):
     """
     Unit Test cases for the Decryption
     methods
     """
-    def test_get_cipher_message():
+    def test_get_cipher_message(self):
         # TODO: Tyler
         pass
 
-    def test_get_decryption_key():
+    def test_get_decryption_key(self):
         # TODO: Tyler
-        filename=''
+        filename = ''
 
         pass
 
-    def test_rsa_decrypt_number():
+    def test_rsa_decrypt_number(self):
         # TODO: Chase
         number = 6
-        private_key = (5,5)
+        private_key = (5, 5)
         pass
 
-    def test_rsa_decrypt_numbers():
+    def test_rsa_decrypt_numbers(self):
         # TODO: Tyler
         numbers = []
-        private_key = (3,7)
+        private_key = (3, 7)
         pass
 
     def test_base64_decode_numbers(self):
         # TODO: Tyler
-        message_chunks=[]
+        message_chunks = []
         pass
 
     def test_convert_number_to_message_chunk(self):
