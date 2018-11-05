@@ -1,4 +1,27 @@
-from generate_lib import *
+from generate_lib_alex import *
+
+
+
+x = calculate_d()
+
+print (x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def test_pick_two_random_prime():
     # TODO: Leo
@@ -39,4 +62,4 @@ def test_extended_euclidean_algorithm():
 def test_build_prime_number_list():
     # TODO: Nikita
 
-test_calculate_phi()
+    test_calculate_phi()
