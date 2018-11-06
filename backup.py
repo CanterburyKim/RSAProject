@@ -13,6 +13,33 @@ def get_message():
     test_message = my_file.readlines()
     return test_message
 
+def convert_chunk_into_number(input_msg):
+
+
+    test_message = 'Hello this is a test'
+    return test_message
+
+def get_encryption_key(filename):
+    """
+    open the file with the filename
+    know the format
+    read in the exponent and modulus
+    return a 2-tuple of exponent and modululs
+    """
+    # TODO: Xander
+    encryption_key = (65537, 12)
+    return encryption_key
+
+def split_message_into_chunks(message):
+    """
+    Take a long message and then split it into
+    5-character chunks.  Put those chunks into
+    a list and then return that list
+    """
+    # TODO: Kevin
+    chunks = ['this ', 'is a ', 'test ', 'chunk']
+    return chunks
+
 def convert_chunk_into_number(chunk_of_string):
 
     """

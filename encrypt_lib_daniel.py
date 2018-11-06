@@ -9,8 +9,8 @@ def get_message():
     return that message
     """
     # TODO: Daniel
-
-    test_message = 'Hello this is a test'
+    my_file = open("C:/Users/Triqk/github/RSAProject1/TestFile.txt", "r")
+    test_message = my_file.readlines()
     return test_message
 
 def convert_chunk_into_number(chunk_of_string):
@@ -19,7 +19,9 @@ def convert_chunk_into_number(chunk_of_string):
     into a number using UTF-8 encoding.  return that number
     """
     # TODO: Daniel
-    number = 7
+    my_file = open("C:/Users/Triqk/github/RSAProject1/TestFile.txt", "r")
+    test_message = my_file.readlines()
+    number = int(text_message)
     return number
 
 
