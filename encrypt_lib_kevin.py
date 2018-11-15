@@ -5,17 +5,13 @@ def split_message_into_chunks(message):
     counter1 = 0
     while message_length > 0:
         five_letters = message[counter1:counter2]
-        print(five_letters)
         message_length = message_length - 1
         chunks.append(five_letters)
         counter2 = counter2 + 5
         counter1 = counter1 + 5
-
-
     # Take a long message and then split it into
     # 5-character chunks.  Put those chunks into
     # a list and then return that list
-    # TODO: Kevin
     return chunks
 
 def convert_chunks_into_numbers(chunks_of_strings):
