@@ -12,9 +12,10 @@ print (test_message)
 
 # def test_convert_chunk_into_number(chunk_of_string):
 # TODO: Daniel
-#the value 10 is just indicating that there is another line
+#the value 10 is just indicating that there is another line "line space"
+#is what it is called
 test_list = []
-test_list = test_message
+test_list = (test_message)
 
 for msg in test_list:
     test_number = convert_chunk_into_number(msg)
