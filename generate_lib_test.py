@@ -1,8 +1,11 @@
 from generate_lib_alex import *
 
-e = 3
-phi = 29
-calculate_d(e, phi)
+e = 65537
+phi = 100_000_960_001_404
+d = calculate_d(e, phi)
+
+print ('d =',d)
+
 
 
 
