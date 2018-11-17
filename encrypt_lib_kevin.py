@@ -23,9 +23,9 @@ def convert_chunks_into_numbers(chunks_of_strings):
     for chunks in chunks_of_strings:
 
         chunk = chunks_of_strings[counter1]
-        print(chunk)
+#        print(chunk)
         chunk_char = [ord(chars) for chars in chunk]
-        print(chunk_char)
+#        print(chunk_char)
 
         counter1 = counter1 + 1
         Length = len(chunk)
@@ -36,39 +36,33 @@ def convert_chunks_into_numbers(chunks_of_strings):
 
         while Length-Length <= counter2 <= Length:
             num = chunk_char[counter2]
-            print('{0:08b}'.format(num))
-            print('{:08x}'.format(num))
+#            print('{0:08b}'.format(num))
+#            print('{:08x}'.format(num))
 
             num = num << (8*counterl)
-            print('{0:08b}'.format(num))
+#            print('{0:08b}'.format(num))
 
             counter2= counter2 + 1
             counterl = counterl - 1
 
             TotalVal = TotalVal + num
-            print('{:08x}'.format(TotalVal))
-            print('------------------------------------------------')
-            print('')
+#            print('{:08x}'.format(TotalVal))
+#            print('------------------------------------------------')
+#            print('')
 
             if counterl == -1:
                 list_of_chunks_to_num.append(TotalVal)
-                print('{:08x}'.format(TotalVal))
+#                print('{:08x}'.format(TotalVal))
                 TotalVal = 0
-                print(list_of_chunks_to_num)
-    return list_of_chunks_to_num
-
-h = 'my name is kvin. hello haiaic'
-print(h)
-h = split_message_into_chunks(h)
-print(h)
-h = convert_chunks_into_numbers(h)
-print(h)
-
+#                print(list_of_chunks_to_num)
 
 # Takes in a list of chunks of strings and then
 # convert them all into numbers.  Put those numbers
 # into a list and return that list.
 # TODO: Kevin
+
+    return list_of_chunks_to_num
+
 
 def base64_encode_numbers(numbers):
 
