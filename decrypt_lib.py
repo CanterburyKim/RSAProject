@@ -50,8 +50,7 @@ def base64_decode_numbers(message_chunks):
     takes list of message_chunk strings and then base64 decodes them
     """
     # TODO: Tyler
-    # TODO use library base64 encode function to encode
-    # each of the numbers in the list
+
 
     base64_decoded_numbers= [4343,333,221,222]
     return base64_decoded_numbers
