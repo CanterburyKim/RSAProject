@@ -3,7 +3,9 @@ Encryption Test
 """
 import unittest
 import encrypt_lib
+from encrypt_lib import *
 
+<<<<<<< HEAD
 class TestEncryptMethods(unittest.TestCase):
     def test_get_message(self):
         # TODO: Daniel
@@ -54,3 +56,25 @@ class TestEncryptMethods(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+=======
+# def test_get_message():
+    # TODO: Daniel
+test_message = get_message()
+print (test_message)
+
+# def test_convert_chunk_into_number(chunk_of_string):
+# TODO: Daniel
+#the value 10 is just indicating that there is another line "line space"
+#is what it is called
+test_list = []
+test_list = (test_message)
+
+for msg in test_list:
+    test_number = convert_chunk_into_number(msg)
+    print (test_number)
+
+
+def test_rsa_encrypt_number(number, public_key):
+    # TODO: Daniel
+    pass
+>>>>>>> daniel/master
