@@ -1,3 +1,5 @@
+import base64
+
 def split_message_into_chunks(message):
     chunks = []
     message_length = len(message) / 5
@@ -65,10 +67,17 @@ def convert_chunks_into_numbers(chunks_of_strings):
 
 
 def base64_encode_numbers(numbers):
-
-    base64_encoded_strings= ['aaaaa','bcdef','ghtff']
-    return base64_encoded_strings
-
+    counter = len(numbers)
+    print(counter)
+    list_of_base64 = []
+    while counter > 0:
+        for num in numbers:
+            num_as_bytes = num.to_bytes(8, byteorder= 'big')
+            encodedtxt = base64.b64encode(num_as_bytes)
+            counter = counter - 1
+            # print(encodedtxt)
+            list_of_base64.append(encodedtxt)
+    return list_of_base64
 #takes list of numbers and then base64 encodes them
 # TODO: Kevin
 # TODO use library base64 encode function to encode
