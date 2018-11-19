@@ -4,8 +4,8 @@ Contains functions that will allow for
 generation of public key, private key pair
 and then save those to file
 """
-
-
+import base64
+import encrypt_lib
 def calculate_d(e, phi):
     #"""
     #given the e and phi use the RSA formula to calculate
@@ -41,16 +41,42 @@ def calculate_d(e, phi):
 
 
 def save_public_key_to_file(public_key, filename):
-    """
-    Need to use two supporting functions:
-    (a) encode number(public_key) to base64
-    (b) save base64 encoded number to file
-    """
+    #"""
+    #Need to use two supporting functions:
+    #(a) encode number(public_key) to base64
+    #(b) save base64 encoded number to file
+    #"""
     # TODO: Alex
     # TODO encode public key to base64
 
     # TODO save base64 encoded privaet key to file
-    pass
+
+    encryption_exponent_in_bytes = (public_key[0]).to_bytes(7, byteorder='big')
+    encoded_e_exponent_in_bytes = base64.b64encode(encryption_exponent_in_bytes)
+
+    modulus_in_bytes = (public_key[1].to_bytes(7, byteorder='big'))
+    encoded_modulus_in_bytes = base64.b64encode(modulus_in_bytes)
+
+    with open(filename, 'w') as f:
+        f.write(encoded_e_exponent_in_bytes.decode('utf-8'))
+        f.write('\n')
+        f.write(encoded_modulus_in_bytes.decode('utf-8'))
+
+public_key = (47502589681765,100746831503809)
+filename = 'outputfile.txt'
+save_public_key_to_file(public_key, filename)
+
+
+
+
+
+
+
+
+
+
+
+pass
 
 
 
