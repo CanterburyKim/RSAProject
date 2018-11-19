@@ -22,6 +22,25 @@ for msg in test_list:
     print (test_number)
 
 
-def test_rsa_encrypt_number(number, public_key):
-    # TODO: Daniel
-    pass
+def rsa_encrypt_number(number , public_key):
+#    number = 6
+#    public_key = (65537 , 100746831503809)
+    exponent = public_key[0]
+    mod_n = public_key[1]
+    encrypted_number = (number ** exponent) % mod_n
+    return encrypted_number
+
+
+def rsa_encrypt_numbers(numbers, public_key):
+    encrypted_numbers = [];
+    for n in numbers:
+        #public_key = (65537 , 100746831503809)
+        encrypted_number = rsa_encrypt_number(n, public_key)
+        encrypted_numbers.append(encrypted_number)
+    #    print (encrypted_number)
+    return encrypted_numbers
+
+numbers = [1, 2, 3, 4]
+public_key = (65537 , 100746831503809)
+encrypted_numbers = rsa_encrypt_numbers(numbers, public_key)
+print (encrypted_numbers)
