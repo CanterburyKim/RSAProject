@@ -4,6 +4,8 @@ Test cases for Generate Keys library
 
 import unittest
 from generate_lib import *
+from generate_lib_alex import *
+
 
 class TestGenerateLib(unittest.TestCase):
 
@@ -22,6 +24,13 @@ class TestGenerateLib(unittest.TestCase):
     def test_calculate_d(self):
         # TODO: Alex
         pass
+
+        e = 65537
+        phi = 100_000_960_001_404
+        d = calculate_d(e, phi)
+
+        print ('d =',d)
+
 
     def test_generate_public_key(self):
         # TODO: Leo
