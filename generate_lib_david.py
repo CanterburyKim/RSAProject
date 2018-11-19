@@ -22,7 +22,6 @@ def calculate_n(p,q):
     return n
 
 
-
 def generate_private_key(dec_exponent, modulus):
     """
     Use the decryption exponent and the modulus to create

@@ -32,10 +32,8 @@ def calculate_n(p,q):
     # TODO: David
     pass
     # temp value for n TODO remove this and replace with correct
-    n = 100_000_980_001_501
-
-    # TODO fill RSA formula for n here
-
+    # n = 100_000_980_001_501
+    n = p*q
 
     return n
 
