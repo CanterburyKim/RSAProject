@@ -24,10 +24,10 @@ def save_private_key_to_file(private_key, filename):
     (b) save base64 encoded number to file
     """
 
-    decription_exponent_in_bytes = (private_key[0]).to_bytes(6, byteorder='big')
+    decription_exponent_in_bytes = (private_key[0]).to_bytes(7, byteorder='big')
     encoded_d_exponent_in_bytes = base64.b64encode(decription_exponent_in_bytes)
 
-    modulus_in_bytes = (private_key[1].to_bytes(6, byteorder='big'))
+    modulus_in_bytes = (private_key[1].to_bytes(7, byteorder='big'))
     encoded_modulus_in_bytes = base64.b64encode(modulus_in_bytes)
 
     with open(filename, 'w') as f:
@@ -43,33 +43,27 @@ save_private_key_to_file(private_key, filename)
 
 
 
-def save_private_key_to_file(private_key, filename):
-    """
-    Need to use two supporting functions:
-    (a) encode number(private_key) to base64
-    (b) save base64 encoded number to file
-    """
-    # TODO: Nikita
-    # TODO encode private key to base64 (use lib code)
-
-    # TODO save base64 encoded private key to file
-
-    pass
 
 
+# ni = 6
+# ni = ni.encode('utf-8')
+# yes = base64.b64decode(ni)
+# print(yes)
 
+def read_key_from_file(filename):
+    with open(filename, 'r') as f:
+        my_lines = f.read().splitlines()
+        print(my_lines)
+        exponent = base64.b64decode(my_lines[0])
+        exp_good = int.from_bytes(exponent, byteorder='big')
 
-def build_prime_number_list():
-    """
-    Take the comma separated list of prime numbers
-    (acquired from Wolfram Alpha) from the file (ifname)
-    and then save them to the outputfile (ofname)
-    with 1 prime number per line
-    """
-    ifname = 'raw_primes.txt'
-    ofname = 'primes.txt'
+        mod = base64.b64decode(my_lines[1])
+        mod_good = int.from_bytes(mod, byteorder='big')
 
+        key = (exp_good, mod_good)
+    return(key)
 
+print(read_key_from_file(filename))
 
 
 # if __name__ == '__main__':
