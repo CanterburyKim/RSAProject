@@ -29,10 +29,6 @@ def calculate_n(p,q):
     use the RSA formula to calculate n from p and q
     TODO fill in the RSA formula here
     """
-    # TODO: David
-    pass
-    # temp value for n TODO remove this and replace with correct
-    # n = 100_000_980_001_501
     n = p*q
 
     return n
