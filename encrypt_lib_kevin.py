@@ -68,7 +68,7 @@ def convert_chunks_into_numbers(chunks_of_strings):
 
 def base64_encode_numbers(numbers):
     counter = len(numbers)
-    print(counter)
+    # print(counter)
     list_of_base64 = []
     while counter > 0:
         for num in numbers:
