@@ -4,7 +4,15 @@ def convert_numbers_to_strings(numbers):
     Convert each of those into a string,
     put it into a list and return that list
     """
+    num_string_list=[]
+    for num in numbers:
+        num_str=convert_number_to_string(num)
+        num_string_list.append(num_str)
+            
+    return(num_string_list)
+
     # TODO: Joe
+
 
 def temp_test():
     """
