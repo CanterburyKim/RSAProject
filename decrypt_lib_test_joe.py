@@ -6,6 +6,7 @@ from decrypt_lib_joe import *
 def test_convert_numbers_to_strings(numbers):
     # TODO: Joe
     pass
+    print(strings)
 
 def test_assemble_message_from_chunks():
     # TODO: Joe
