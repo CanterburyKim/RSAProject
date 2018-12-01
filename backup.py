@@ -7,7 +7,7 @@ def get_message():
     Open a file
     Read the message from the file
     return that message
-    """
+    """ 
     # TODO: Daniel
     my_file = open("C:/Users/Triqk/github/RSAProject1/TestFile.txt", "r")
     test_message = my_file.readlines()

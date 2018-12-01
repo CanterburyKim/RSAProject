@@ -1,3 +1,5 @@
+from encrypt_lib_daniel import *
+
 # def test_get_message():
     # TODO: Daniel
 test_message = get_message()
