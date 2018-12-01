@@ -27,13 +27,17 @@ def convert_chunk_into_number(chunk_of_string):
 
 
 def rsa_encrypt_number(number, public_key):
-    """
-    take a number and then use the rsa formula to encrypt it
-    using the public key
-    """
     # TODO: Daniel
-    encrypted_number = 22
 
+    #EKEY = (65537,100746831503809)
+    EKEY = [65537 , 100746831503809]
+    Exponent = EKEY[0]
+    mod_n = EKEY[1]
+    message = 5
+    #EKEY = 65537
+    #mod_n = 100746831503809
+    #  PRIVATE_KEY = (47502589681765,100746831503809)
+    encrypted_number = (message ** Exponent) % mod_n
     return encrypted_number
 
 def rsa_encrypt_numbers(numbers, public_key):
